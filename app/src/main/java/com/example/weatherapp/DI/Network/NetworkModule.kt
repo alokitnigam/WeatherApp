@@ -12,8 +12,8 @@ import javax.inject.Singleton
 @Module
 class NetworkModule {
     companion object {
-        val DATABASE_NAME = "weather.db"
-        val BASE_URL = "https://demo0701212.mockable.io/"
+        val API_KEY = "a3a970c91babc09a1ed57042aa6e5e0d"
+        val BASE_URL = "http://api.openweathermap.org/"
 
     }
     @Singleton

@@ -12,10 +12,11 @@ interface ApiService {
 
     @GET("data/2.5/weather?")
     fun getCurrentWeatherData(@Query("lat") lat: String?, @Query("lon") lon: String?,
-                              @Query("APPID") app_id: String?
-    ): Single<Response<WeatherResponse>>
+                              @Query("appid") app_id: String?): Single<Response<WeatherResponse>>
 
-
+    @GET("data/2.5/forecast?")
+    fun getForecast(@Query("lat") lat: String?, @Query("lon") lon: String?,@Query("cnt") cnt:String,
+                    @Query("appid") app_id: String?): Single<Response<WeatherResponse>>
 
 }
 

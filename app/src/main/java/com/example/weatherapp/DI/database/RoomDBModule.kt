@@ -27,6 +27,6 @@ class RoomDBModule {
     @Singleton
     @Provides
     fun provideAudioDao(weatherDatabase: WeatherDatabase): WeatherRepo {
-        return weatherDatabase.audioDao()
+        return weatherDatabase.weatherDao()
     }
 }
